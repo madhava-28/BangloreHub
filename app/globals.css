@@ -300,9 +300,7 @@ nav {
 .tabs {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scrollbar-width: thin;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
   padding: 0 2rem;
   max-width: 1100px;
@@ -311,7 +309,6 @@ nav {
 }
 
 .tab {
-  flex: 0 0 auto;
   padding: 0.45rem 1rem;
   border-radius: 100px;
   border: 1px solid var(--border);
