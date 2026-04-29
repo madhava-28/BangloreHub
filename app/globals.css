@@ -597,6 +597,28 @@ footer span {
   }
   .tabs {
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .tab {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    padding: 0.5rem 0.6rem;
+    line-height: 1.2;
+  }
+  .cat-label {
+    margin-bottom: 0.9rem;
+  }
+  .cat-name {
+    font-size: 0.95rem;
+  }
+  .cat-count {
+    font-size: 0.72rem;
   }
   .app-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -605,9 +627,17 @@ footer span {
   .app-card {
     padding: 0.9rem 0.8rem;
     border-radius: 14px;
+    min-width: 0;
   }
   .app-name {
     font-size: 0.92rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+  .app-desc {
+    font-size: 0.7rem;
+    line-height: 1.35;
+    word-break: break-word;
   }
   .bottom-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
