@@ -1,3 +1,18 @@
+import { DM_Sans, Syne } from "next/font/google";
+import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-dm-sans"
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-syne"
+});
+
 export const metadata = {
   title: "Best Home & City Services in Bangalore | BangaloreHub",
 
@@ -37,3 +52,11 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 5,
 };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={`${dmSans.variable} ${syne.variable}`}>{children}</body>
+    </html>
+  );
+}

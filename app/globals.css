@@ -20,13 +20,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 body {
@@ -43,8 +40,6 @@ body {
   background-position: center, center, center, center;
   background-attachment: fixed, fixed, fixed, fixed;
   animation: bgShift 18s ease-in-out infinite alternate;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body::before {
@@ -567,9 +562,6 @@ footer span {
     padding: 0 1rem;
     height: 60px;
   }
-  .logo {
-    font-size: 1.1rem;
-  }
   .hero {
     padding: 92px 1rem 52px;
   }
@@ -586,34 +578,18 @@ footer span {
     margin-top: 1.3rem;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.6rem;
   }
   .search-wrap {
     max-width: 100%;
   }
-  .search-wrap input {
-    font-size: 16px;
-    padding: 0.95rem 1rem 0.95rem 2.7rem;
-  }
   .nav-pill {
     width: 100%;
-    padding: 0.95rem 1.4rem;
-    font-size: 1rem;
   }
   .hero-stats {
     margin-top: 2rem;
     gap: 1.25rem;
   }
-  .stat-num {
-    font-size: 1.4rem;
-  }
-  .stat-label {
-    font-size: 0.7rem;
-  }
   .hero-gallery {
-    display: none;
-  }
-  .hero-orb {
     display: none;
   }
   .section {
@@ -622,7 +598,7 @@ footer span {
   .tabs {
     padding: 0 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5rem;
     margin-bottom: 2rem;
   }
@@ -632,9 +608,8 @@ footer span {
     text-align: center;
     justify-content: center;
     font-size: 0.82rem;
-    padding: 0.6rem 0.7rem;
+    padding: 0.5rem 0.6rem;
     line-height: 1.2;
-    min-height: 44px;
   }
   .cat-label {
     margin-bottom: 0.9rem;
@@ -647,71 +622,28 @@ footer span {
   }
   .app-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem;
+    gap: 0.75rem;
   }
   .app-card {
-    padding: 0.8rem 0.7rem;
-    border-radius: 12px;
+    padding: 0.9rem 0.8rem;
+    border-radius: 14px;
     min-width: 0;
-    min-height: 44px;
-  }
-  .app-logo {
-    width: 38px;
-    height: 38px;
-    font-size: 1.1rem;
-    border-radius: 10px;
   }
   .app-name {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     line-height: 1.2;
     word-break: break-word;
   }
   .app-desc {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     line-height: 1.35;
     word-break: break-word;
   }
-  .divider {
-    margin: 1.5rem 0;
-  }
-  .more-note {
-    padding: 0 1rem;
-    font-size: 0.85rem;
-  }
   .bottom-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0 1rem;
-    gap: 0.6rem;
   }
   .bottom-shot {
-    height: 100px;
-  }
-  footer {
-    padding: 1.5rem 1rem;
-    font-size: 0.72rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 380px) {
-  .hero h1 {
-    font-size: 1.75rem;
-  }
-  .hero p {
-    font-size: 0.9rem;
-  }
-  .tabs {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.4rem;
-  }
-  .tab {
-    font-size: 0.75rem;
-    padding: 0.5rem 0.5rem;
-  }
-  .app-grid {
-    gap: 0.5rem;
-  }
-  .hero-stats {
-    gap: 1rem;
+    height: 120px;
   }
 }
