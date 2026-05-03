@@ -1,22 +1,14 @@
-import categories from "../../categories-data";
-import CategorySection from "../../components/CategorySection";
-
 export const metadata = {
-  title: "Food Delivery Services in Bangalore",
+  title: "Best Food Delivery Apps in Bangalore | Order Food Online",
   description:
-    "Explore food delivery apps in Bangalore like Swiggy, Zomato and more.",
+    "Find top food delivery apps in Bangalore for fast and reliable food delivery near you.",
 };
 
-export default function FoodDeliveryPage() {
-  const category = categories.find(
-    (c) => c.name === "Food Delivery"
-  );
-
+export default function Page() {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Food Delivery Services in Bangalore</h1>
-
-      <CategorySection category={category} />
+    <div>
+      <h1>Food Delivery in Bangalore</h1>
+      <p>Order from the best restaurants using top food delivery platforms.</p>
     </div>
   );
 }
