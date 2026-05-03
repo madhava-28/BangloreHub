@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "Transport Services in Bangalore | Cab, Auto & Bike",
+  title: "Entertainment Options in Bangalore",
   description:
-    "Find the best transport options in Bangalore including cabs, autos and bike taxis.",
+    "Explore entertainment apps, movies, events, and fun activities in Bangalore.",
 };
 
-export default function Page() {
+export default function EntertainmentPage() {
   return (
     <div>
-      <h1>Transport Services in Bangalore</h1>
-      <p>Book cabs, autos and bike rides easily across Bangalore.</p>
+      <h1>Entertainment in Bangalore</h1>
+      <p>Discover movies, events, and entertainment platforms.</p>
     </div>
   );
 }

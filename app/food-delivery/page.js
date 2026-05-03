@@ -1,4 +1,3 @@
-
 export const metadata = {
   title: "Food Delivery Services in Bangalore",
   description:
@@ -9,9 +8,7 @@ export default function FoodDeliveryPage() {
   return (
     <div>
       <h1>Food Delivery Services in Bangalore</h1>
-      <p>
-        Discover top food delivery apps like Swiggy, Zomato, and other services in Bangalore.
-      </p>
+      <p>Discover top food delivery apps like Swiggy, Zomato, and more.</p>
     </div>
   );
 }

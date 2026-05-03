@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "Pet Services in Bangalore | Grooming, Boarding & Care",
+  title: "Pet Services in Bangalore",
   description:
-    "Find pet grooming, boarding and care services in Bangalore.",
+    "Find pet care services including grooming, boarding, and veterinary services in Bangalore.",
 };
 
-export default function Page() {
+export default function PetServicesPage() {
   return (
     <div>
       <h1>Pet Services in Bangalore</h1>
-      <p>Discover trusted pet services for grooming and care.</p>
+      <p>Explore grooming, vet care, and pet boarding services.</p>
     </div>
   );
 }
